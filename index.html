@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+	<!--
+	  ____                    _      _          _         
+	 / ___|___  ___ _ __ ___ (_) ___| |    __ _| |__  ___ 
+	| |   / _ \/ __| '_ ` _ \| |/ __| |   / _` | '_ \/ __|
+	| |__| (_) \__ \ | | | | | | (__| |__| (_| | |_) \__ \
+	 \____\___/|___/_| |_| |_|_|\___|_____\__,_|_.__/|___/
+                                                       
+	
+	Finely - Responsive Under Construction Template
+	Version 1.2 - Last updated August 2015
+	Copyright 2015 CosmicLabs
+
+	This template and more are available to purchase on Themeforest.net
+	http://themeforest.net/user/cosmiclabs/portfolio
+
+	For template support, see the documentation files or get in touch with us.
+	Support site: https://cosmiclabs.ticksy.com/
+	Support email: support@cosmiclabs.co.uk
+
+	-->
+
+<html lang="ja">
+
+<!--[if IE 9]>
+	<html class="ie9" lang="en">
+<![endif]-->
+	
+	<head>
+		<title>beeets</title>
+        
+        <!-- ADD VEGAS SLIDER LIKE BUBBLE?? FOR VERSION 2.0 OF FINELY -->
+        
+		
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/faviconlogo.png">
+	</head>
+	
+	<body>	
+		
+		<!-- BEGIN MAIN -->
+		<div class="section-main" id="top">
+			<div class="mini-container main-mini-container">
+				<div class="title">
+					<div class="header">
+						<img src="images/logo.png" class="logo" alt="Finely" />
+					</div>
+
+					<div class="content">
+						<div id="countdown"></div>
+						<div class="navigation">
+							<a class="nav-button" onclick="showSection('section-subscribe')">subscribe</a>
+							<a class="nav-button" onclick="showSection('section-about')">about</a>
+							<a href="" class="nav-button" onclick="showSection('section-about')">our videos</a>
+							<a class="nav-button" onclick="showSection('section-events')">events</a>
+							<a class="nav-button" onclick="showSection('section-offers')">offers</a>
+							<a class="nav-button" onclick="showSection('section-contact')">contact</a>
+						</div>
+						<div class="social-nav">
+							<!-- Social Icons -->
+							<a href="" target="_blank" class="social-button"><i class="fa fa-fw fa-twitter"></i></a>
+							<a href="" target="_blank" class="social-button"><i class="fa fa-fw fa-instagram"></i></a>
+							<a href="" target="_blank" class="social-button"><i class="fa fa-fw fa-facebook"></i></a>
+							<a href="" target="_blank" class="social-button"><i class="fa fa-fw fa-youtube"></i></a>
+							<!-- End Social Icons -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="videoMuteButton" onclick="$('#bgndVideo').toggleVolume(); $('.videoButton.notmuted').toggleClass('mute');">
+				<div class="videoButton notmuted"><i class="fa fa-volume-up"></i></div>
+				<div class="videoButton muted"><i class="fa fa-volume-off"></i></div>
+			</div>					
+		</div>		
+		<!-- END MAIN -->
+		
+		<!-- BEGIN SUBSCRIBE PAGE -->
+		<div class="scrollsection section-subscribe">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button scrollsection-close-button">close</a>
+					<h2>subscribe</h2>
+				</div>
+				<div class="content">
+					<p>登録いただければ、新しいイベントが開催される時にお知らせします。</p>
+					<p>個人情報は、本人の同意なく第三者に提供しません。</p>		
+					<div class="subscribe">
+						<form id="newsletter-signup" action="/案件/2012_武田様/Finely%20-%20Template/php/subscribe.php?action=signup" method="post">
+							<input type="email" class="enteremail" name="signup-email" placeholder="Enter your email address" spellcheck="false" />
+							<button type="submit" id="signup-button" class="signup-button"><i class="fa fa-check"></i></button>
+							<div id="signup-response" class="signup"></div>
+						</form>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END SUBSCRIBE PAGE -->
+		
+		
+		<!-- BEGIN ABOUT PAGE -->
+		<div class="scrollsection section-about">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button scrollsection-close-button">close</a>
+					<h2>about us</h2>
+				</div>
+				<div class="content">
+					<p>普段入ることのできない家や場所で最高にクリエイティブなフードと音楽を提供してる僕らがレストランを持たない理由とは。</p>
+					<ul>
+						<li>必ずフードロスが出るから。</li>
+						<li>同じ空間にいるのに時間や体験を共有できないから。</li>
+						<li>料理のこと、その背景を理解してもらいたいから。</li>
+						<li>会場中を移動し同じ感覚を持つゲストと体験共有したいから。</li>
+					</ul>
+					<h2>サービス内容</h2>
+					<ul>
+						<li>人が暮らす家を舞台に、その家の個性を最大限引き出すクリエイティブな料理と、そこに音楽を乗せ２０名の招待制で毎回違うシェフとミュージシャンをセッティングするチームです。家に招待されるという事は特別なことです。ゲストを持て成すために最高のパフォーマンスを発揮します。</li>
+						<li>鎌倉から始める理由。鎌倉の地に最初に人が住んだのは今から1万年以上前の旧石器時代のころと思われ日本人が古くから住む土地でスタートさせるのはとても意味のあることです。</li>
+					</ul>
+					<!-- <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipiscing elit. Sed vestibulum hendrerit turpis id tempor. Suspendisse orci sapien, iaculis a rutrum at, scelerisque vitae arcu. Donec quis justo vestibulum, euismod erat eu, gravida sem. Nullam euismod ultrices justo, id tempor orci ullamcorper in.</p>
+					<p>Nam commodo, lectus a consectetur hendrerit, justo arcu imperdiet elit, id tincidunt nisl sapien eu eros. Duis suscipit sapien ac massa elementum, ac vehicula enim pretium. Nunc nec erat nibh. Donec rutrum iaculis massa et dapibus. Donec cursus, justo quis aliquet pharetra, lorem enim rhoncus magna, ac porta arcu dolor sed nulla.</p>			
+					
+					<div class="about-container">
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-support fa-fw" style="color: #1abc9c"></i></span>
+								<h3>Great Support</h3>
+								<p>We try extremely hard to provide a fast and excellent support service. You'll have a reply within 12 hours.</p>
+							</div>
+						</div>
+						<div class="about-box-spacer"></div>
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-heart fa-fw" style="color: #ff7d7d"></i></span>
+								<h3>Made with Love</h3>
+								<p>A lot of time and hard work goes into making our templates - we hope that you love them as much as we do.</p>
+							</div>
+						</div>
+						<div class="about-box-spacer"></div>
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-magic fa-fw" style="color: #52b8cc"></i></span>
+								<h3>Easy Setup</h3>
+								<p>Finely is very simple to set up and customise. All of the code is clearly commented and well documented.</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- END ABOUT PAGE -->
+
+		<!-- BEGIN EVENTS PAGE -->
+		<div class="scrollsection section-events">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button scrollsection-close-button">close</a>
+					<h2>events</h2>
+				</div>
+				<div class="content">
+					<p>普段入ることのできない、人が暮らす家や場所を舞台に</p>
+					<p>最高にクリエイティブなフードと音楽を提供。</p>
+					<p>招待制で毎回違うシェフとミュージシャンをセッティングし進化し続ける</p>
+				</div>
+				<!-- <video src="image/movie.mp4" poster="sample.png" controls autoplay loop></video> -->
+			</div>
+		</div>
+		<!-- END EVENTS PAGE -->
+		
+		<!-- BEGIN OFFERS PAGE -->
+		<div class="scrollsection section-offers">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button scrollsection-close-button">close</a>
+					<h2>offers</h2>
+				</div>
+				<div class="content">
+					<div class="contact-box-container">
+					<div class="contact-box left">
+						<h3>chef</h3>
+						<p>beeetsに参加したいというchefを募集しています</p>
+						<h4>こんな方を歓迎します</h4>
+						<ul>
+							<li>条件１</li>
+							<li>条件２</li>
+							<li>条件３</li>
+							<li>条件４</li>
+						</ul>	
+						<h3>casa</h3>
+						<p>beeetsにcasaを提供したいという団体や個人の方を募集しています</p>
+						<h4>こんな方を歓迎します</h4>
+						<ul>
+							<li>20人以上着席で座れるテーブルやリビングがある</li>
+							<li>条件２</li>
+							<li>条件３</li>
+							<li>条件４</li>
+						</ul>	
+						<p>以下のフォームよりお問い合わせください</p>
+						<!-- <ul>
+							<li><i class="fa fa-fw fa-map-marker"></i>123 Some Street, Some City, UK</li>
+							<li><i class="fa fa-fw fa-phone"></i>012 3456 7890</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">info@mycompanyname.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">mycompanyname.com</a></li>
+						</ul> -->
+					</div>
+					<div class="contact-box-spacer"></div>
+					<div class="contact-box right">
+						<div class="contact-wrap">
+							<div id="contact-success"><!-- Success Message --><i class="fa fa-check"></i> Your email was sent. Thanks!</div>
+								<form id="contact-us" action="php/contact.php?action=contact" method="post">
+									<!-- Anti-spam input, do not delete! --><input type="text" class="antispam" name="friendlyUrl" /><!-- Anti-spam input, do not delete! -->
+									<input type="text" class="contact-form-input requiredField" id="contactName" name="contactName" placeholder="Name" spellcheck="false" />
+									<input type="email" class="contact-form-input requiredField email" id="email" name="email" placeholder="Email" spellcheck="false" />
+									<textarea class="contact-form-input message-box requiredField" placeholder="Message" name="comments" id="commentsText"></textarea>
+									<input type="submit" name="submit" id="contact-button" value="Send" />
+									<div class="contact-loading">
+										<div class="square-loader-wrap">
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+										</div>
+									</div>
+									<input type="hidden" name="submitted" id="submitted" value="true" />
+									<div class="contact-response"><!-- Error Message -->Please fix the errors and try again.</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OFFERS PAGE -->
+
+
+		<!-- END CONTACT PAGE --><!-- BEGIN CONTACT PAGE -->
+		<div class="scrollsection section-contact">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button scrollsection-close-button">close</a>
+					<h2>contact</h2>
+				</div>
+				<div class="content">
+					<div class="contact-box-container">
+					<div class="contact-box left">
+						<p>ご質問、ご意見、ご提案がございましたら、お気軽にお問い合わせください。</p>
+						<p>いつでもご連絡いただければ、折り返しご連絡いたします。</p>
+						<!-- <ul>
+							<li><i class="fa fa-fw fa-map-marker"></i>123 Some Street, Some City, UK</li>
+							<li><i class="fa fa-fw fa-phone"></i>012 3456 7890</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">info@mycompanyname.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">mycompanyname.com</a></li>
+						</ul> -->
+					</div>
+					<div class="contact-box-spacer"></div>
+					<div class="contact-box right">
+						<div class="contact-wrap">
+							<div id="contact-success"><!-- Success Message --><i class="fa fa-check"></i> Your email was sent. Thanks!</div>
+								<form id="contact-us" action="php/contact.php?action=contact" method="post">
+									<!-- Anti-spam input, do not delete! --><input type="text" class="antispam" name="friendlyUrl" /><!-- Anti-spam input, do not delete! -->
+									<input type="text" class="contact-form-input requiredField" id="contactName" name="contactName" placeholder="Name" spellcheck="false" />
+									<input type="email" class="contact-form-input requiredField email" id="email" name="email" placeholder="Email" spellcheck="false" />
+									<textarea class="contact-form-input message-box requiredField" placeholder="Message" name="comments" id="commentsText"></textarea>
+									<input type="submit" name="submit" id="contact-button" value="Send" />
+									<div class="contact-loading">
+										<div class="square-loader-wrap">
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+										</div>
+									</div>
+									<input type="hidden" name="submitted" id="submitted" value="true" />
+									<div class="contact-response"><!-- Error Message -->Please fix the errors and try again.</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END CONTACT PAGE -->
+		
+		<!-- Background Video container -->
+		<a id="bgndVideo" class="player"></a>
+		
+		<!-- Loading Page Overlay -->
+		<div class="page-loading">
+			<noscript><div class="noscript-error"><i class="fa fa-info-circle"></i>Enable JavaScript to see this site working properly.</div></noscript>
+			<div class="square-loader-wrap">
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+			</div>
+		</div>
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+			
+			<!-- All set up / customisation variables for slideshow and video background etc. in custom.js file -->
+			<script type="text/javascript" src="js/custom.js"></script>
+		
+		<script type="text/javascript" src="js/countdown.js"></script>
+		<script type="text/javascript" src="js/emailsubscribe.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/placeholders.min.js"></script>
+        <script type="text/javascript" src="js/finely.js"></script>
+
+		
+
+	</body>
+</html>
